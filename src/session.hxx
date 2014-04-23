@@ -15,8 +15,8 @@ class Session
         Session(std::string);
         ~Session();
     private:
-        Logger mainLogger;
-        Database mainDB;
+        Logger logger;
+        Database db;
 };
 
 #endif
