@@ -9,11 +9,11 @@ class Payment;
 class Logger;
 class Database;
 
-class Session
+class VRSalesSession
 {
     public:
-        Session(std::string);
-        ~Session();
+        VRSalesSession(std::string);
+        ~VRSalesSession();
     private:
         Logger logger;
         Database db;
