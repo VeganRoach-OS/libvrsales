@@ -25,7 +25,6 @@ class Quote
     private:
         std::string name;
         int id;
-        int customer;
         std::vector<Product> items;
 };
 

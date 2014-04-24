@@ -16,7 +16,6 @@ class Payment
     private:
         std::string name;
         int id;
-        int customer;
 };
 
 #endif

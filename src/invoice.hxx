@@ -30,7 +30,5 @@ class Invoice
     private:
         std::string name;
         int id;
-        int parentOrder;
-        int customer;
         std::vector<Product> items;
 };

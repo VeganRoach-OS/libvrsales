@@ -29,8 +29,6 @@ class Order
     private:
         std::string name;
         int id;
-        int parentQuote;
-        int customer;
         std::vector<Product> items;
 };
 
