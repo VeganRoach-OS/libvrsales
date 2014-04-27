@@ -1,10 +1,12 @@
 #ifndef CUSTOMER_H
 #define CUSTOMER_H
 
+class VRSalesSession;
+
 class Customer
 {
     public:
-        Customer(std::string);
+        Customer(VRSalesSession,int);
         ~Customer();
 
         std::string getName();

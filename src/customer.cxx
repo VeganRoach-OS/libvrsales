@@ -1,32 +1,33 @@
 #include <iostream>
 #include "customer.hxx"
+#include "session.hxx"
 
 using namespace std;
 
 string name;
 int id;
 
-Customer::Customer(string n)
+Customer::Customer(VRSalesSession session, int i)
 {
-    name = n;
+    id = i;
 }
 
 Customer::~Customer()
 {
-    // todo: Save all variables to database
+    // TODO: Save all variables to database
 }
 
-string getName()
+string Customer::getName()
 {
     return name;
 }
 
-int getID()
+int Customer::getID()
 {
     return id;
 }
 
-void setName(string n)
+void Customer::setName(string n)
 {
     name = n;
 }
