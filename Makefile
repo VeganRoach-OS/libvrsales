@@ -7,7 +7,7 @@ SDIR=src
 ODIR=obj
 LDIR=lib
 
-CXXSRCS=$(shell if [ -e $(SDIR)/*.cxx ]; then ls $(SDIR)/*.cxx; fi;)
+CXXSRCS=$(shell ls $(SDIR)/*.cxx;)
 CXXTEMP=$(subst $(SDIR),$(ODIR),$(CXXSRCS))
 CXXOBJS=$(subst .cxx,.o,$(CXXTEMP))
 LPATH=$(LDIR)/$(LIB)
