@@ -4,7 +4,6 @@
 
 using namespace std;
 
-string name;
 int id;
 
 Customer::Customer(VRSalesSession session, int i)
@@ -14,12 +13,12 @@ Customer::Customer(VRSalesSession session, int i)
 
 Customer::~Customer()
 {
-    // TODO: Save all variables to database
 }
 
 string Customer::getName()
 {
-    return name;
+    // TODO: get name from DB
+	return "";
 }
 
 int Customer::getID()
@@ -29,5 +28,5 @@ int Customer::getID()
 
 void Customer::setName(string n)
 {
-    name = n;
+    // TODO: set name in DB
 }

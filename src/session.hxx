@@ -1,13 +1,14 @@
 #ifndef SESSION_H
 #define SESSION_H
 
+#include "logger.hxx"
+#include "database.hxx"
+
 class Customer;
 class Quote;
 class Order;
 class Invoice;
 class Payment;
-class Logger;
-class Database;
 
 class VRSalesSession
 {

@@ -14,7 +14,6 @@ class Customer
 
         void setName(std::string);
     private:
-        std::string name;
         int id;
 };
 
